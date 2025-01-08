@@ -70,7 +70,7 @@ stream.on("data", (response) => {
         if ( !label) {
           continue;
         }
-        console.log({label, progam_id, transaction_id});
+        console.log({label, progam_id, transaction_id, block: block.blockHeight});
       }
     }
   }
