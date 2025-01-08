@@ -11,15 +11,6 @@ export PINAX_KEY=f98f•••••••••••••••••••�
 # Run Firehose
 grpcurl -keepalive-time 30 -max-msg-sz 50241867 -d '{"start_block_num": -100}' -H "X-Api-Key: $PINAX_KEY" solana.firehose.pinax.network:443 sf.firehose.v2.Stream.Blocks
 ```
-
-Raydium has used (and continues to use) multiple program IDs on Solana, each corresponding to different parts of its ecosystem—AMM, staking (a.k.a. “Fusion” pools), AcceleRaytor (IDO), router functionality, etc. Over time, Raydium has also released new versions of some programs. Consequently, there isn’t a single “master list” published in one place, and some older program IDs may have been deprecated or replaced.
-
-Below are **some** of the well-known Raydium program IDs on Solana mainnet, as of public information floating around the ecosystem. Always verify via Raydium’s official docs, GitHub, or by exploring on-chain directly (e.g. using Solana Explorer or a block explorer like Solscan):
-
----
-
-Below are GitHub references for the commonly known Raydium programs. Most of the on-chain programs (AMM, staking, IDO, router) live under the **[raydium-io/raydium-contracts](https://github.com/raydium-io/raydium-contracts)** repository. Within that repo, each core program has its own folder under `programs/`:
-
 ---
 
 ### 1) Raydium AMM Program (Liquidity Pool V4)
